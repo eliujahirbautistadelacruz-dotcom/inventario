@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Esto define el título de la página que se ve en la pestaña del navegador -->
+    <title>Inventario - Tres Sesenta Consultoria</title>
+    <!-- Esto hace que la página sea responsive para móviles, ajustando el viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlaza el archivo CSS para los estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado con el nombre de la empresa -->
+    <header>
+        <h1>Tres Sesenta Consultoria - Inventario</h1>
+    </header>
+    
+    <!-- Barra de búsqueda -->
+    <section id="search-bar">
+        <!-- Input para escribir el código o nombre del producto -->
+        <input type="text" id="search-input" placeholder="Busca por código o nombre de producto...">
+    </section>
+    
+    <!-- Tabla donde se mostrarán los datos del Google Sheet -->
+    <section id="inventory-table">
+        <!-- La tabla se generará dinámicamente con JS, pero aquí ponemos el encabezado -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Producto</th>
+                    <th>Ubicación</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Las filas de datos se agregarán aquí con JavaScript -->
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Enlaza el archivo JavaScript al final para que se ejecute después de cargar el HTML -->
+    <script src="script.js"></script>
+</body>
+</html>
