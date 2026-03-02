@@ -1,0 +1,68 @@
+/* Estilos generales: Fondo blanco, fuente sans-serif para legibilidad en móviles */
+body {
+    background-color: #FFFFFF; /* Blanco como fondo principal */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    color: #000000; /* Texto negro para contraste */
+}
+
+/* Encabezado: Azul para el texto, centrado */
+header h1 {
+    color: #0000FF; /* Azul */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Barra de búsqueda: Turquesa para borde, rosa para foco */
+#search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#search-input {
+    width: 90%; /* Ancho completo en móviles */
+    padding: 10px;
+    border: 2px solid #40E0D0; /* Turquesa para borde */
+    border-radius: 5px;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #FFC0CB; /* Rosa cuando se enfoca */
+}
+
+/* Tabla: Bordes turquesa, fondo blanco */
+table {
+    width: 100%; /* Tabla full-width para móviles */
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #40E0D0; /* Turquesa para bordes */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0000FF; /* Azul para encabezados */
+    color: #FFFFFF; /* Texto blanco en encabezados */
+}
+
+/* Highlight para filas encontradas en búsqueda: Fondo rosa */
+.highlight {
+    background-color: #FFC0CB; /* Rosa para resaltar */
+}
+
+/* Responsive para móviles: Reduce padding en pantallas pequeñas */
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 5px;
+    }
+    
+    #search-input {
+        width: 100%; /* Aún más ancho en móviles pequeños */
+    }
+}
